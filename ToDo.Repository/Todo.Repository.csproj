@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Todo.Core.Models\Todo.Core.Models.csproj" />
+    <ProjectReference Include="..\Todo.Core.Interfaces\Todo.Core.Interfaces.csproj" />
+    <ProjectReference Include="..\Todo.Core.Business\Todo.Core.Business.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+  </PropertyGroup>
+
+</Project>

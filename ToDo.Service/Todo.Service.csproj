@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Core" Version="1.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="1.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="1.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Owin" Version="1.0.2" />
+    <PackageReference Include="Nancy" Version="2.0.0-clinteastwood" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Todo.Core.Business\Todo.Core.Business.csproj" />
+    <ProjectReference Include="..\Todo.Core.Interfaces\Todo.Core.Interfaces.csproj" />
+    <ProjectReference Include="..\Todo.Core.Models\Todo.Core.Models.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Nancy" Version="2.0.0-clinteastwood" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <RuntimeIdentifiers>win7-x64;win10-x64</RuntimeIdentifiers>
+  </PropertyGroup>
+</Project>
