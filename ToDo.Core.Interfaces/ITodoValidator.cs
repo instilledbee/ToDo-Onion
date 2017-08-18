@@ -1,8 +1,8 @@
 using System;
 
-namespace Todo.Core.Interfaces
+namespace ToDo.Core.Interfaces
 {
-    public interface ITodoValidator
+    public interface IToDoValidator
     {
         bool IsValidTitle(string title);
 

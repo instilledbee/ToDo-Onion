@@ -3,10 +3,10 @@ using Nancy.Bootstrapper;
 using Nancy.Configuration;
 using Nancy.Diagnostics;
 using Nancy.TinyIoc;
-using Todo.Core.Business;
-using Todo.Core.Interfaces;
+using ToDo.Core.Business;
+using ToDo.Core.Interfaces;
 
-namespace Todo.Service
+namespace ToDo.Service
 {
     public class Bootstrapper : DefaultNancyBootstrapper
     {
@@ -16,12 +16,12 @@ namespace Todo.Service
             environment.Tracing(true, true);
             base.Configure(environment);
         }
-
+        
         protected override void ConfigureApplicationContainer(TinyIoCContainer container)
         {
             base.ConfigureApplicationContainer(container);
 
-            container.Register();
+            container.Register<IToDoManager, ToDoManagerMock>();
         }
     }
 }

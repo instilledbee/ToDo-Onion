@@ -1,26 +1,26 @@
 using System;
 using System.Collections.Generic;
-using Todo.Core.Interfaces;
-using Todo.Core.Models;
+using ToDo.Core.Interfaces;
+using ToDo.Core.Models;
 
-namespace Todo.Core.Business
+namespace ToDo.Core.Business
 {
-    public class TodoManagerMock : ITodoManager
+    public class ToDoManagerMock : IToDoManager
     {
-        private ITodoValidator _validator;
-        private ITodoRepository _repository;
+        private IToDoValidator _validator;
+        private IToDoRepository _repository;
 
-        public TodoManagerMock(ITodoValidator validator, ITodoRepository repository)
+        public ToDoManagerMock(IToDoValidator validator, IToDoRepository repository)
         {
             _validator = validator;
             _repository = repository;
         }
 
-        public TodoItem Create(string title, string description)
+        public ToDoItem Create(string title, string description)
         {
             if (_validator.IsValidTitle(title) && _validator.IsValidDescription(description))
             {
-                var newItem = new TodoItem()
+                var newItem = new ToDoItem()
                 {
                     Title = title,
                     Description = description
@@ -39,17 +39,17 @@ namespace Todo.Core.Business
             return _repository.Delete(id);
         }
 
-        public TodoItem Get(int id)
+        public ToDoItem Get(int id)
         {
             return _repository.Get(id);
         }
 
-        public IEnumerable<TodoItem> GetAll()
+        public IEnumerable<ToDoItem> GetAll()
         {
             return _repository.GetAll();
         }
 
-        public bool Update(TodoItem item)
+        public bool Update(ToDoItem item)
         {
             var updatedEntity = _repository.Save(item);
 

@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\Todo.Core.Models\Todo.Core.Models.csproj" />
-    <ProjectReference Include="..\Todo.Core.Interfaces\Todo.Core.Interfaces.csproj" />
-    <ProjectReference Include="..\Todo.Core.Business\Todo.Core.Business.csproj" />
+    <ProjectReference Include="..\ToDo.Core.Models\ToDo.Core.Models.csproj" />
+    <ProjectReference Include="..\ToDo.Core.Interfaces\ToDo.Core.Interfaces.csproj" />
+    <ProjectReference Include="..\ToDo.Core.Business\ToDo.Core.Business.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

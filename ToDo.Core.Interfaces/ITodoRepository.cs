@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using Todo.Core.Models;
+using ToDo.Core.Models;
 
-namespace Todo.Core.Interfaces
+namespace ToDo.Core.Interfaces
 {
-    public interface ITodoRepository : IRepository<int, TodoItem>
+    public interface IToDoRepository : IRepository<int, ToDoItem>
     {
     }
 }

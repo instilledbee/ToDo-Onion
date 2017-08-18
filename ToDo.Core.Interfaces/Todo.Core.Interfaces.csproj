@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\Todo.Core.Models\Todo.Core.Models.csproj" />
+    <ProjectReference Include="..\ToDo.Core.Models\ToDo.Core.Models.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using Todo.Core.Interfaces;
-using Todo.Core.Models;
+using ToDo.Core.Interfaces;
+using ToDo.Core.Models;
 
-namespace Todo.Core.Business
+namespace ToDo.Core.Business
 {
-    public class TodoValidatorMock : ITodoValidator
+    public class ToDoValidatorMock : IToDoValidator
     {
         // Business rule: To-do descriptions are optional
         public bool IsValidDescription(string description) =>

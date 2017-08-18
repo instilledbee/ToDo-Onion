@@ -1,17 +1,17 @@
 using System.Collections.Generic;
-using Todo.Core.Models;
+using ToDo.Core.Models;
 
-namespace Todo.Core.Interfaces
+namespace ToDo.Core.Interfaces
 {
-    public interface ITodoManager
+    public interface IToDoManager
     {
-        TodoItem Get(int id);
+        ToDoItem Get(int id);
 
-        TodoItem Create(string title, string description);
+        ToDoItem Create(string title, string description);
 
-        IEnumerable<TodoItem> GetAll();
+        IEnumerable<ToDoItem> GetAll();
 
-        bool Update(TodoItem item);
+        bool Update(ToDoItem item);
 
         bool Delete(int id);
     }

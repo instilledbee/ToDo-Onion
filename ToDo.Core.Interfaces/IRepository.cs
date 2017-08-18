@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Todo.Core.Interfaces
+namespace ToDo.Core.Interfaces
 {
     public interface IRepository<TKey, TEntity>
     {

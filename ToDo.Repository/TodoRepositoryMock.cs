@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Todo.Core.Interfaces;
-using Todo.Core.Models;
+using ToDo.Core.Interfaces;
+using ToDo.Core.Models;
 
-namespace Todo.Repository
+namespace ToDo.Repository
 {
-    public class TodoRepositoryMock : ITodoRepository
+    public class ToDoRepositoryMock : IToDoRepository
     {
-        private IList<TodoItem> context;
+        private IList<ToDoItem> context;
 
-        public TodoRepositoryMock()
+        public ToDoRepositoryMock()
         {
-            context = new List<TodoItem>();
+            context = new List<ToDoItem>();
             CreateMockData(context);
         }
 
@@ -21,17 +21,17 @@ namespace Todo.Repository
             return false;
         }
 
-        public TodoItem Get(int id)
+        public ToDoItem Get(int id)
         {
             return context.Where(x => x.ID == id).SingleOrDefault();
         }
 
-        public IEnumerable<TodoItem> GetAll()
+        public IEnumerable<ToDoItem> GetAll()
         {
             return context;
         }
 
-        public TodoItem Save(TodoItem entity)
+        public ToDoItem Save(ToDoItem entity)
         {
             if (!entity.ID.HasValue) 
             {
@@ -43,23 +43,23 @@ namespace Todo.Repository
             return context[entity.ID.Value];
         }
 
-        private void CreateMockData(IList<TodoItem> db)
+        private void CreateMockData(IList<ToDoItem> db)
         {
-            db.Add(new TodoItem() {
+            db.Add(new ToDoItem() {
                 ID = 0,
                 Title = "Update Design Document",
                 Description = "Lorem ipsum dolor sit amet",
                 IsComplete = false
             });
 
-            db.Add(new TodoItem() {
+            db.Add(new ToDoItem() {
                 ID = 1,
                 Title = "Create Webservice",
                 Description = "Create To-Do Webservice",
                 IsComplete = false
             });
 
-            db.Add(new TodoItem() {
+            db.Add(new ToDoItem() {
                 ID = 2,
                 Title = "Test",
                 Description = "qwertyasdfgh",

@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.Core.Business", "Todo.Core.Business\Todo.Core.Business.csproj", "{8B7C0C47-17A6-45DC-82FC-C831AEB8D928}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Core.Business", "ToDo.Core.Business\ToDo.Core.Business.csproj", "{8B7C0C47-17A6-45DC-82FC-C831AEB8D928}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.Core.Interfaces", "Todo.Core.Interfaces\Todo.Core.Interfaces.csproj", "{BD2350C4-4DBA-425D-995C-FB8E97B463FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Core.Interfaces", "ToDo.Core.Interfaces\ToDo.Core.Interfaces.csproj", "{BD2350C4-4DBA-425D-995C-FB8E97B463FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.Core.Models", "Todo.Core.Models\Todo.Core.Models.csproj", "{F2E19073-8514-447A-8310-214300F2B79B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Core.Models", "ToDo.Core.Models\ToDo.Core.Models.csproj", "{F2E19073-8514-447A-8310-214300F2B79B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.Repository", "Todo.Repository\Todo.Repository.csproj", "{0B42B157-1A82-427F-B285-C0470AFEC289}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Repository", "ToDo.Repository\ToDo.Repository.csproj", "{0B42B157-1A82-427F-B285-C0470AFEC289}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.Service", "Todo.Service\Todo.Service.csproj", "{D1A42751-32B8-4B19-BCFE-5DBBBD4EB211}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Service", "ToDo.Service\ToDo.Service.csproj", "{D1A42751-32B8-4B19-BCFE-5DBBBD4EB211}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

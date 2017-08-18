@@ -2,7 +2,7 @@ using System;
 using Microsoft.AspNetCore.Builder;
 using Nancy.Owin;
 
-namespace Todo.Service
+namespace ToDo.Service
 {
     public class Startup
     {

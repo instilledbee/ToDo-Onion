@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Todo.Core.Models
+namespace ToDo.Core.Models
 {
-    public class TodoItem
+    public class ToDoItem
     {
         public int? ID { get; set; }
         

@@ -10,9 +10,9 @@
     <PackageReference Include="Nancy" Version="2.0.0-clinteastwood" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Todo.Core.Business\Todo.Core.Business.csproj" />
-    <ProjectReference Include="..\Todo.Core.Interfaces\Todo.Core.Interfaces.csproj" />
-    <ProjectReference Include="..\Todo.Core.Models\Todo.Core.Models.csproj" />
+    <ProjectReference Include="..\ToDo.Core.Business\ToDo.Core.Business.csproj" />
+    <ProjectReference Include="..\ToDo.Core.Interfaces\ToDo.Core.Interfaces.csproj" />
+    <ProjectReference Include="..\ToDo.Core.Models\ToDo.Core.Models.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Nancy" Version="2.0.0-clinteastwood" />

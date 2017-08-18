@@ -1,17 +1,17 @@
 using Nancy;
 using Nancy.ModelBinding;
-using Todo.Core.Interfaces;
-using Todo.Core.Models;
+using ToDo.Core.Interfaces;
+using ToDo.Core.Models;
 
-namespace Todo.Service.Modules
+namespace ToDo.Service.Modules
 {
-    public class TodoModule : NancyModule
+    public class ToDoModule : NancyModule
     {
-        public TodoModule(ITodoManager manager)
+        public ToDoModule(IToDoManager manager)
         {
             Get("/items/{id}", args => manager.Get(args.id));
             Get("/items", args => manager.GetAll());
-            Post("/items", args => manager.Update(this.Bind<TodoItem>()));
+            Post("/items", args => manager.Update(this.Bind<ToDoItem>()));
         }
     }
 }
