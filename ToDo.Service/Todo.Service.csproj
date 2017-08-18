@@ -13,6 +13,7 @@
     <ProjectReference Include="..\ToDo.Core.Business\ToDo.Core.Business.csproj" />
     <ProjectReference Include="..\ToDo.Core.Interfaces\ToDo.Core.Interfaces.csproj" />
     <ProjectReference Include="..\ToDo.Core.Models\ToDo.Core.Models.csproj" />
+    <ProjectReference Include="..\ToDo.Repository\ToDo.Repository.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Nancy" Version="2.0.0-clinteastwood" />

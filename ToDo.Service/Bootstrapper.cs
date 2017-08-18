@@ -5,6 +5,7 @@ using Nancy.Diagnostics;
 using Nancy.TinyIoc;
 using ToDo.Core.Business;
 using ToDo.Core.Interfaces;
+using ToDo.Repository;
 
 namespace ToDo.Service
 {
@@ -22,6 +23,8 @@ namespace ToDo.Service
             base.ConfigureApplicationContainer(container);
 
             container.Register<IToDoManager, ToDoManagerMock>();
+            container.Register<IToDoValidator, ToDoValidatorMock>();
+            container.Register<IToDoRepository, ToDoRepositoryMock>();
         }
     }
 }
