@@ -10,8 +10,11 @@ namespace ToDo.Service.Modules
         public ToDoModule(IToDoManager manager)
         {
             Get("/items/{id}", args => manager.Get(args.id));
+            Post("/items/{id}", args => manager.Complete(args.id));
+            
             Get("/items", args => manager.GetAll());
-            Post("/items", args => manager.Update(this.Bind<ToDoItem>()));
+            Post("/items", args => manager.Modify(this.Bind<ToDoItem>()));
+            Put("/items", args => manager.Create(args.title, args.description));
         }
     }
 }

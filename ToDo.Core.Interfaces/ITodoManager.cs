@@ -11,8 +11,10 @@ namespace ToDo.Core.Interfaces
 
         IEnumerable<ToDoItem> GetAll();
 
-        bool Update(ToDoItem item);
+        bool Modify(ToDoItem item);
 
         bool Delete(int id);
+
+        bool Complete(int id);
     }
 }

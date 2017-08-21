@@ -49,11 +49,34 @@ namespace ToDo.Core.Business
             return _repository.GetAll();
         }
 
-        public bool Update(ToDoItem item)
+        public bool Modify(ToDoItem item)
         {
-            var updatedEntity = _repository.Save(item);
+            if (_validator.IsValidTitle(item.Title) && _validator.IsValidDescription(item.Description))
+            {
+                var updatedEntity = _repository.Save(item);
+                return updatedEntity.ID == item.ID;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
-            return updatedEntity.ID == item.ID;
+        public bool Complete(int id)
+        {
+            var item = _repository.Get(id);
+
+            if(item != null)
+            {
+                item.IsComplete = true;
+                _repository.Save(item);
+
+                return item.IsComplete;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
