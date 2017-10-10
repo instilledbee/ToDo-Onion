@@ -7,7 +7,7 @@ namespace ToDo.Core.Interfaces
     {
         ToDoItem Get(int id);
 
-        ToDoItem Create(string title, string description);
+        ToDoItem Create(ToDoItem item);
 
         IEnumerable<ToDoItem> GetAll();
 

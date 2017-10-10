@@ -16,21 +16,21 @@ namespace ToDo.Core.Business
             _repository = repository;
         }
 
-        public ToDoItem Create(string title, string description)
+        public ToDoItem Create(ToDoItem item)
         {
-            if (_validator.IsValidTitle(title) && _validator.IsValidDescription(description))
+            if (_validator.IsValidTitle(item.Title) && _validator.IsValidDescription(item.Description))
             {
-                var newItem = new ToDoItem()
-                {
-                    Title = title,
-                    Description = description
-                };
+                // var newItem = new ToDoItem()
+                // {
+                //     Title = title,
+                //     Description = description
+                // };
 
-                return _repository.Save(newItem);
+                return _repository.Save(item);
             }
             else
             {
-                throw new Exception("Invalud input");
+                throw new Exception("Invalid input");
             }
         }
 

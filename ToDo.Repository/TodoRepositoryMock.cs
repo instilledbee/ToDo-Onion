@@ -36,9 +36,12 @@ namespace ToDo.Repository
             if (!entity.ID.HasValue) 
             {
                 entity.ID = context.Count;
+                context.Add(entity);
             }
-
-            context[entity.ID.Value] = entity;
+            else 
+            {
+                 context[entity.ID.Value] = entity;
+            }
 
             return context[entity.ID.Value];
         }

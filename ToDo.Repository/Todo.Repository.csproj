@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <ItemGroup>
     <ProjectReference Include="..\ToDo.Core.Models\ToDo.Core.Models.csproj" />
     <ProjectReference Include="..\ToDo.Core.Interfaces\ToDo.Core.Interfaces.csproj" />
     <ProjectReference Include="..\ToDo.Core.Business\ToDo.Core.Business.csproj" />
   </ItemGroup>
-
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.2" />
+  </ItemGroup>
   <PropertyGroup>
     <TargetFramework>netstandard1.6</TargetFramework>
   </PropertyGroup>
-
 </Project>

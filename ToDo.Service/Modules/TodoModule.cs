@@ -14,7 +14,7 @@ namespace ToDo.Service.Modules
             
             Get("/items", args => manager.GetAll());
             Post("/items", args => manager.Modify(this.Bind<ToDoItem>()));
-            Put("/items", args => manager.Create(args.title, args.description));
+            Put("/items", args => manager.Create(this.Bind<ToDoItem>()));
         }
     }
 }
